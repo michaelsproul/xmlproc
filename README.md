@@ -1,9 +1,8 @@
-Solar XML Parser
-================
+xmlproc
+=======
 
-A simple C program to extract data from a commerical Solar array's XML output.
+A simple XML processor in C.
 
-(It doesn't really do much yet)
+Using Python is better and easier, if it's available.
 
 By Michael Sproul.
-

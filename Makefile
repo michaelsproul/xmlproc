@@ -2,13 +2,13 @@ CC= gcc
 CFLAGS=-Wall -W -pedantic -std=c99 -g
 LDFLAGS=-lm
 
-all: solarxml
+all: xmlproc
 
-solarxml: solarxml.c
-	$(CC) $(CFLAGS) -o $@ solarxml.c $(LDFLAGS)
+xmlproc: xmlproc.c
+	$(CC) $(CFLAGS) -o $@ xmlproc.c $(LDFLAGS)
 
-debug: solarxml.c
-	$(CC) $(CFLAGS) -D_DEBUG -o solarxml solarxml.c $(LDFLAGS)
+debug: xmlproc.c
+	$(CC) $(CFLAGS) -D_DEBUG -o xmlproc xmlproc.c $(LDFLAGS)
 
 clean:
-	rm solarxml
+	rm xmlproc
